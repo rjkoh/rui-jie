@@ -116,7 +116,7 @@ export const Who = () => {
                 <Title>About me</Title>
                 <Subtitle>Hello!</Subtitle>
                 <Desc>
-                I am Rui Jie, a current Year 3 Student at National University of Singapore, majoring in Computer Science. I am currently also specialising in the focus areas of Software Engineering and Artificial Intelligence / Machine Learning.<br/><br/>
+                I am Rui Jie, a final year student at National University of Singapore, majoring in Computer Science, graduating in August 2025. I am currently also specialising in the focus areas of Software Engineering, Artificial Intelligence / Machine Learning and Databases.<br/><br/>
                 My interest started out from curiosity through learning how to build my own telegram bot, which blossomed into a passion for software engineering. 
                 I am a driven individual with a knack for leadership, teamwork, and problem-solving. 
                 Through my various modules and my own project, I have learnt numerous frontend and backend softwares, which you may find out more about here on this website.<br/><br/>

@@ -24,8 +24,11 @@ export const Databases = () => {
                         <RenderTexture attach="map">
                             <PerspectiveCamera makeDefault position={[0,0,2]} />
                             <color attach="background" args={["#fd8300"]} />
-                            <Text fontSize={0.4} color="blue">
+                            <Text fontSize={0.3} color="blue" position={[0,0.15,0]}>
                                 Firebase
+                            </Text>
+                            <Text fontSize={0.3} color="blue" position={[0,-0.15,0]}>
+                                MongoDB
                             </Text>
                         </RenderTexture>
                     </meshStandardMaterial>
@@ -57,8 +60,14 @@ export const Databases = () => {
                         <RenderTexture attach="map">
                             <PerspectiveCamera makeDefault position={[0,0,2]} />
                             <color attach="background" args={["#9D2146"]} />
-                            <Text fontSize={0.5} color="#F5C501">
-                                UML
+                            <Text fontSize={0.2} color="#F5C501" position={[0,0.3,0]}>
+                                AI
+                            </Text>
+                            <Text fontSize={0.2} color="#F5C501" position={[0,0,0]}>
+                                ML
+                            </Text>
+                            <Text fontSize={0.2} color="#F5C501" position={[0,-0.3,0]}>
+                                NLP
                             </Text>
                         </RenderTexture>
                     </meshBasicMaterial>
@@ -67,8 +76,8 @@ export const Databases = () => {
                         <RenderTexture attach="map">
                             <PerspectiveCamera makeDefault position={[0,0,2]} />
                             <color attach="background" args={["#e2d700"]} />
-                            <Text fontSize={0.5} color="black">
-                                JSON
+                            <Text fontSize={0.3} color="black">
+                                JUnit
                             </Text>
                         </RenderTexture>
                     </meshBasicMaterial>

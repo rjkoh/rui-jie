@@ -7,13 +7,16 @@ import { GoRestAPI } from './GoRestAPI'
 import { HallInOne } from './HallInOne'
 import Keyboard from './Keyboard'
 import { Rcycl } from './Rcycl'
+import { ScamQuest } from './ScamQuest';
+import { Crisp } from './Crisp';
 
 const data = [
-    "hALLinOne",
-    "ConnectNUS",
-    "RCYCL",
-    "Go REST API",
-    "More"
+  "CRISP",
+  "ScamQuest",
+  "hALLinOne",
+  "RCYCL",
+  "ConnectNUS",
+  "More"
 ]
 
 const Section = styled.div`
@@ -138,8 +141,10 @@ export const Works = () => {
                     <ConnectNUS/>
                 ) : curr == 'RCYCL' ? (
                     <Rcycl/>
-                ) : curr == 'Go REST API' ? (
-                    <GoRestAPI/>
+                ) : curr == 'ScamQuest' ? (
+                    <ScamQuest/>
+                ) : curr == 'CRISP' ? (
+                  <Crisp/>
                 ) : (
                   <MoreContainer>
                     <ModelContainer>

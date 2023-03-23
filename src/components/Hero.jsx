@@ -114,7 +114,7 @@ export const Hero = () => {
             I am a Singaporean Computer Science student skilled in Java, JavaScript and Python.<br/><br/>
             Adept at working in teams and both frontend and backend programming, and pursuing a career in Software Engineering.<br/><br/>
             My life motto is to be the best you can be, and I always strive for excellence in my work.<br/><br/>
-            Other languages/frameworks include React, React Native, GoLang, Node.js, Three.js, SQL, HTML and TailwindCSS.
+            Other languages/frameworks include React, Go, SQL as well as various ML tools.
           </Desc>
           <Links>
             <Icon href="https://github.com/rjkoh" target='_blank'>
