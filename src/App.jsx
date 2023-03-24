@@ -1,6 +1,8 @@
 import styled from "styled-components"
 import { Contact } from "./components/Contact"
 import { Hero } from "./components/Hero"
+import { Languages } from "./components/Languages"
+import { NavBar } from "./components/NavBar"
 import { Who } from "./components/Who"
 import { Works } from "./components/Works"
 
@@ -21,9 +23,13 @@ function App() {
 
   return (
     <Container>
+      <NavBar/>
+
       <Hero/>
 
       <Who/>
+
+      <Languages/>
 
       <Works/>
 

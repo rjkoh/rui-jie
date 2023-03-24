@@ -2,6 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Section = styled.div`
+    height: 5vh;
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: center;
 `
