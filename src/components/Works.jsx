@@ -84,7 +84,7 @@ const Left = styled.div`
 const MoreContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 100%;
   height: 70%;
   justify-content: center;
   align-items: center;
@@ -108,7 +108,7 @@ const Button = styled.button`
 export const Works = () => {
     const [curr, setCurr] = useState('hALLinOne')
     return (
-    <Section>
+    <Section id='Works'>
         <Container>
             <Left>
                 {curr == 'hALLinOne' ? (
@@ -127,7 +127,7 @@ export const Works = () => {
                           <Keyboard/>
                         </Stage>
                         
-                        <OrbitControls enableZoom={false} autoRotate/>
+                        <OrbitControls autoRotate/>
                       </Canvas>
                     </ModelContainer>
                     

@@ -61,7 +61,7 @@ const Img = styled.img`
 
 export const Who = () => {
   return (
-    <Section>
+    <Section id='Who'>
         <Container>
             <Left>
                 <Canvas>

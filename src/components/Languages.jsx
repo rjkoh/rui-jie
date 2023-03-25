@@ -78,7 +78,7 @@ const Right = styled.div`
 export const Languages = () => {
     const [type, setType] = useState("Backend")
   return (
-    <Section>
+    <Section id='Languages'>
         <Container>
             <Left>
                 <List>

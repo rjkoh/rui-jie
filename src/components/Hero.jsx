@@ -62,7 +62,7 @@ const Right = styled.div`
 
 export const Hero = () => {
   return (
-    <Section>
+    <Section id='Home'>
       <Container>
         <Left>
           <Title>Hello, I am Rui Jie</Title>

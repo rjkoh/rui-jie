@@ -79,7 +79,7 @@ export const Contact = () => {
     }
 
   return (
-    <Section>
+    <Section id='Contact'>
         <Container>
             <Left>
                 <Form ref={ref} onSubmit={handleSubmit}>

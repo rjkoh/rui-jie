@@ -12,13 +12,14 @@ const Section = styled.div`
 const Container = styled.div`
     width: 80%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 10px;
 `
 
 const Logo = styled.img`
   height: 40px;
   align-self: center;
+  cursor: pointer;
 `;
 
 const List = styled.ul`
@@ -34,30 +35,25 @@ const ListItem = styled.li`
     cursor: pointer;
 `;
 
-const Button = styled.button`
-    height: min-content;
-    padding: 10px;
-    background-color: #da4ea2;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    align-self: center;
-    cursor: pointer;
-`;
-
 export const NavBar = () => {
+  const handleClickScroll = (section) => {
+    const element = document.getElementById(section);
+    if (element) {
+      element.scrollIntoView({behavior: 'smooth'});
+    }
+  };
+
   return (
     <Section>
       <Container>
-        <Logo src="../resources/logo.png" />
+        <Logo src="../resources/logo.png" onClick={() => handleClickScroll('Home')}/>
         <List>
-            <ListItem>Home</ListItem>
-            <ListItem>About</ListItem>
-            <ListItem>Languages</ListItem>
-            <ListItem>Works</ListItem>
-            <ListItem>Contact</ListItem>
+            <ListItem onClick={() => handleClickScroll('Home')}>Home</ListItem>
+            <ListItem onClick={() => handleClickScroll('Who')}>About</ListItem>
+            <ListItem onClick={() => handleClickScroll('Languages')}>Languages</ListItem>
+            <ListItem onClick={() => handleClickScroll('Works')}>Works</ListItem>
+            <ListItem onClick={() => handleClickScroll('Contact')}>Contact</ListItem>
         </List>
-        <Button>Email</Button>
       </Container>
     </Section>
   )
