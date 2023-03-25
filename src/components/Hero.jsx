@@ -19,7 +19,7 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   width: 80%;
-  height: 80%;
+  height: 90%;
 `;
 
 const Left = styled.div`
@@ -56,7 +56,6 @@ const Button = styled.button`
 
 const Right = styled.div`
   flex: 3;
-  position: relative;
 `;
 
 

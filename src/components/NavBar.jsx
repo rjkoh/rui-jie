@@ -53,6 +53,7 @@ export const NavBar = () => {
         <List>
             <ListItem>Home</ListItem>
             <ListItem>About</ListItem>
+            <ListItem>Languages</ListItem>
             <ListItem>Works</ListItem>
             <ListItem>Contact</ListItem>
         </List>

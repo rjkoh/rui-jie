@@ -35,16 +35,6 @@ const Subtitle = styled.h2`
 
 const Desc = styled.p``
 
-const Button = styled.button`
-    height: min-content;
-    width: 20%;
-    padding: 10px;
-    background-color: #da4ea2;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-`;
 
 const Left = styled.div`
   flex: 1;

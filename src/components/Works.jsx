@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
+import { OrbitControls, Stage } from '@react-three/drei';
+import { Canvas } from '@react-three/fiber';
+import { ConnectNUS } from './ConnectNUS'
+import { GoRestAPI } from './GoRestAPI'
+import { HallInOne } from './HallInOne'
+import Keyboard from './Keyboard'
+import { Rcycl } from './Rcycl'
 
 const data = [
     "hALLinOne",
     "ConnectNUS",
     "RCYCL",
-    "Go REST API"
+    "Go REST API",
+    "More"
 ]
 
 const Section = styled.div`
@@ -17,14 +25,14 @@ const Section = styled.div`
 `
 
 const Container = styled.div`
-  height: 100vh;
+  height: 100%;
   scroll-snap-align: center;
   display: flex;
   justify-content: space-between;
   width: 80%;
 `
 
-const Left = styled.div`
+const Right = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
@@ -69,24 +77,76 @@ const ListItem = styled.li`
   }
 `
 
-const Right = styled.div`
+const Left = styled.div`
   flex: 1;
 `
 
+const MoreContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 70%;
+  justify-content: center;
+  align-items: center;
+`
+
+const ModelContainer = styled.div`
+  flex: 8;
+`
+
+const ButtonContainer = styled.div`
+  flex: 1;
+`
+
+const Button = styled.button`
+  padding-inline: 10px;
+  padding-block: 5px;
+  border-radius: 5px;
+  font-size: 20px;
+`
+
 export const Works = () => {
-  return (
+    const [curr, setCurr] = useState('hALLinOne')
+    return (
     <Section>
         <Container>
             <Left>
-                <List>
-                    {data.map(item => (
-                        <ListItem key={item} text={item}>{item}</ListItem>
-                    ))}
-                </List>
+                {curr == 'hALLinOne' ? (
+                    <HallInOne/>
+                ) : curr == 'ConnectNUS' ? (
+                    <ConnectNUS/>
+                ) : curr == 'RCYCL' ? (
+                    <Rcycl/>
+                ) : curr == 'Go REST API' ? (
+                    <GoRestAPI/>
+                ) : (
+                  <MoreContainer>
+                    <ModelContainer>
+                      <Canvas>
+                        <Stage environment="city">
+                          <Keyboard/>
+                        </Stage>
+                        
+                        <OrbitControls enableZoom={false} autoRotate/>
+                      </Canvas>
+                    </ModelContainer>
+                    
+                    <ButtonContainer>
+                      <Button>View Github</Button>
+                    </ButtonContainer>
+                    
+                  </MoreContainer>
+                  
+                )
+                }
             </Left>
 
             <Right>
-
+                <List>
+                    {data.map(item => (
+                        <ListItem key={item} text={item} onClick={() => setCurr(item)}>{item}</ListItem>
+                    ))}
+                </List>
             </Right>
         </Container>
     </Section>
