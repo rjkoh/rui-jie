@@ -22,6 +22,10 @@ const Section = styled.div`
   display: flex;
   justify-content: center;
   padding-top: 10vh;
+
+  @media screen and (max-width: 768px){
+    padding-top: 0;
+  }
 `
 
 const Container = styled.div`
@@ -30,6 +34,15 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   width: 80%;
+
+  @media screen and (max-width: 768px){
+    height: 100%;
+    scroll-snap-align: none;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+  }
 `
 
 const Right = styled.div`
@@ -74,6 +87,11 @@ const ListItem = styled.li`
             }
         }
     }
+  }
+
+  @media screen and (max-width: 768px){
+    font-size: 18px;
+    text-align: center;
   }
 `
 
@@ -132,7 +150,7 @@ export const Works = () => {
                     </ModelContainer>
                     
                     <ButtonContainer>
-                      <Button>View Github</Button>
+                      <Button onClick={() => window.open('https://github.com/rjkoh', '_blank')}>View Github</Button>
                     </ButtonContainer>
                     
                   </MoreContainer>

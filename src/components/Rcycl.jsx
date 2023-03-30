@@ -9,6 +9,13 @@ const Section = styled.div`
   justify-content: center;
   align-items: center;
   gap: 3%;
+
+  @media screen and (max-width: 768px) {
+    height: 70%;
+    width: 95%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 `
 
 const Img = styled.img`
@@ -17,10 +24,19 @@ const Img = styled.img`
 
 const Subtitle = styled.h2`
   color: blue;
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+    text-align: center;
+  }
 `
 
 const Desc = styled.p`
     text-align: justify;
+
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+  }
 `
 
 export const Rcycl = () => {
@@ -46,7 +62,7 @@ export const Rcycl = () => {
         Using location services and camera permissions, RCYCL ensures that the user is near the bin before awarding the token. 
         Written as part of NUS Hacker's HackNRoll 2023 in 24 hours.
         <br/> <br/>
-        Written in React Native, supported by NodeJS, Firebase, Git and Ether. Since we are dealing with sensitive information (location, cryptowallet), we tried to ensure proper security as well.
+        Written in React Native, supported by NodeJS, Firebase, Git and Ether.
         </Desc>
     </Section>
   )

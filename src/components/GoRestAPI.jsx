@@ -9,18 +9,38 @@ const Section = styled.div`
   justify-content: center;
   align-items: center;
   gap: 3%;
+
+  @media screen and (max-width: 768px) {
+    height: 70%;
+    width: 95%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 `
 
 const Img = styled.img`
   width: 110%;
+
+  @media screen and (max-width: 768px) {
+    width: 95%;
+  }
 `;
 
 const Subtitle = styled.h2`
   color: blue;
+
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+    text-align: center;
+  }
 `
 
 const Desc = styled.p`
     text-align: justify;
+
+    @media screen and (max-width: 768px) {
+    font-size: 12px;
+  }
 `
 
 export const GoRestAPI = () => {

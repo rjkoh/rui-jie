@@ -7,6 +7,10 @@ const Section = styled.div`
   height: 100vh;
   scroll-snap-align: center;
   padding-top: 10vh;
+
+  @media screen and (max-width: 768px){
+    padding-top: 0;
+  }
 `
 
 const Container = styled.div`
@@ -15,6 +19,13 @@ const Container = styled.div`
     display: flex;
     justify-content: space-between;
     gap: 3%;
+
+    @media screen and (max-width: 768px){
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `
 
 const Left = styled.div`
@@ -22,6 +33,10 @@ const Left = styled.div`
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
+    @media screen and (max-width: 768px){
+        justify-content: center;
+    }
 `
 
 const Title = styled.h1`
@@ -33,6 +48,10 @@ const Form = styled.form`
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    @media screen and (max-width: 768px){
+        width: 100%;
+    }
 `
 
 const Input = styled.input`
@@ -59,6 +78,10 @@ const Button = styled.button`
 
 const Right = styled.div`
     flex: 1;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 `
 
 export const Contact = () => {

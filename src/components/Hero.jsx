@@ -1,5 +1,6 @@
 import { OrbitControls, Stage } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
+import { FaGithub, FaLinkedin, FaEnvelopeOpenText } from 'react-icons/fa'
 import React from 'react'
 import styled from 'styled-components'
 import Mac from './Mac'
@@ -12,6 +13,11 @@ const Section = styled.div`
   align-items: center;
   justify-content: space-between;
   padding-top: 10vh;
+
+  @media screen and (max-width: 768px){
+    height: 200vh;
+    padding-top: 0;
+  }
 `;
 
 const Container = styled.div`
@@ -20,6 +26,13 @@ const Container = styled.div`
   justify-content: space-between;
   width: 80%;
   height: 90%;
+
+  @media screen and (max-width: 768px){
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 const Left = styled.div`
@@ -29,33 +42,58 @@ const Left = styled.div`
   justify-content: center;
   gap: 2%;
 
+  @media screen and (max-width: 768px){
+    flex: 1;
+  }
 `
 
 const Title = styled.h1`
-  font-size: 64px;
+  font-size: 56px;
+
+  @media screen and (max-width: 768px){
+    font-size: 30px;
+    text-align: center;
+  }
 `
 
 const Subtitle = styled.h2`
   color: blue;
+
+  @media screen and (max-width: 768px){
+    font-size: 26px;
+    text-align: center;
+  }
 `
 
 const Desc = styled.p`
-
+  @media screen and (max-width: 768px){
+    font-size: 14px;
+  }
 `
 
-const Button = styled.button`
-    height: min-content;
-    width: max-content;
-    padding: 10px;
-    background-color: #da4ea2;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-`;
+const Links = styled.div`
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+`
+
+const Icon = styled.a`
+  cursor: pointer;
+  scroll-behavior: smooth;
+  color: white;
+  :hover{
+    scale: 1.1;
+    color: #0066fe
+  }
+`
 
 const Right = styled.div`
   flex: 3;
+
+  @media screen and (max-width: 768px){
+    flex: 1;
+    scroll-snap-align: center;
+  }
 `;
 
 
@@ -73,7 +111,20 @@ export const Hero = () => {
             My life motto is to be the best you can be, and I always strive for excellence in my work.<br/>
             Other languages/frameworks include React, React Native, GoLang, Node.js, Three.js, SQL, HTML and TailwindCSS.
           </Desc>
-          <Button>Contact me</Button>
+          <Links>
+            <Icon href="https://github.com/rjkoh" target='_blank'>
+              <FaGithub size={40}/>
+            </Icon>
+            
+            <Icon href="https://www.linkedin.com/in/kohruijie/" target='_blank'>
+              <FaLinkedin size={40}/>
+            </Icon>
+            
+            <Icon href="#Contact">
+              <FaEnvelopeOpenText size={40}/>
+            </Icon>
+            
+          </Links>
         </Left>
         <Right>
           <Canvas>

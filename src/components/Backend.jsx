@@ -1,4 +1,4 @@
-import { OrbitControls, RenderTexture, Text, PerspectiveCamera } from '@react-three/drei'
+import { OrbitControls, RenderTexture, Text, PerspectiveCamera, Image } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import React from 'react'
 import styled from 'styled-components'

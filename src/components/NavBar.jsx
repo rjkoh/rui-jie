@@ -7,6 +7,10 @@ const Section = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
+
+    @media screen and (max-width: 768px) {
+      height: 4%;
+    }
 `
 
 const Container = styled.div`
@@ -20,6 +24,10 @@ const Logo = styled.img`
   height: 40px;
   align-self: center;
   cursor: pointer;
+
+  @media screen and (max-width: 768px){
+    display: none;
+  }
 `;
 
 const List = styled.ul`
@@ -29,6 +37,10 @@ const List = styled.ul`
     width: 60%;
     list-style: none;
     align-self: center;
+
+  @media screen and (max-width: 768px){
+    font-size: 12px;
+  }
 `;
 
 const ListItem = styled.li`

@@ -24,6 +24,14 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   width: 80%;
+
+  @media screen and (max-width: 768px){
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
 `
 
 const Left = styled.div`
@@ -68,6 +76,10 @@ const ListItem = styled.li`
             }
         }
     }
+  }
+
+  @media screen and (max-width: 768px){
+    font-size: 56px;
   }
 `
 

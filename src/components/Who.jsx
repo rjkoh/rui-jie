@@ -7,6 +7,10 @@ const Section = styled.div`
   height: 100vh;
   scroll-snap-align: center;
   padding-top: 10vh;
+
+  @media screen and (max-width: 768px){
+    height: 200vh;
+  }
 `
 const Container = styled.div`
   height: 100vh;
@@ -14,6 +18,14 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   width: 80%;
+
+  @media screen and (max-width: 768px){
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
 `;
 
 const Right = styled.div`
@@ -23,22 +35,41 @@ const Right = styled.div`
   justify-content: center;
   gap: 2%;
 
+  @media screen and (max-width: 768px){
+    scroll-snap-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 `
 
 const Title = styled.h1`
   font-size: 64px;
+  @media screen and (max-width: 768px){
+    text-align: center;
+  }
 `
 
 const Subtitle = styled.h2`
   color: blue;
+  @media screen and (max-width: 768px){
+    text-align: center;
+  }
 `
 
-const Desc = styled.p``
+const Desc = styled.p`
+  @media screen and (max-width: 768px){
+    font-size: 14px;
+  }
+`
 
 
 const Left = styled.div`
   flex: 1;
   position: relative;
+
+  @media screen and (max-width: 768px){
+    scroll-snap-align: center;
+  }
 `;
 
 const Img = styled.img`
