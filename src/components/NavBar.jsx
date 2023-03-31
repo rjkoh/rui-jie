@@ -58,7 +58,7 @@ export const NavBar = () => {
   return (
     <Section>
       <Container>
-        <Logo src="../resources/logo.png" onClick={() => handleClickScroll('Home')}/>
+        <Logo src="/Logo.png" onClick={() => handleClickScroll('Home')}/>
         <List>
             <ListItem onClick={() => handleClickScroll('Home')}>Home</ListItem>
             <ListItem onClick={() => handleClickScroll('Who')}>About</ListItem>

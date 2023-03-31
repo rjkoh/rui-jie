@@ -43,14 +43,14 @@ const Desc = styled.p`
 
 export const Rcycl = () => {
     var index = 1;
-    const [image, setImage] = useState('../resources/rcycl/1.png')
+    const [image, setImage] = useState('/rcycl/1.png')
     useEffect(() => {
         setInterval(() => {
             index++;
             if (index > 4) {
                 index = 1;
             }
-            setImage(`../resources/rcycl/${index}.png`)
+            setImage(`/rcycl/${index}.png`)
         }, 5000)
     }, [])
   return (

@@ -109,7 +109,7 @@ export const Who = () => {
                         <MeshDistortMaterial color="#400562" attach="material" distort={0.6} speed={2}/>
                     </Sphere>
                 </Canvas>
-                <Img src="../resources/profile.jpeg" style={{borderRadius: '50%', borderWidth:'thick', borderColor:'white', borderStyle:'solid'}}/>
+                <Img src="/profile.jpeg" style={{borderRadius: '50%', borderWidth:'thick', borderColor:'white', borderStyle:'solid'}}/>
             </Left>
 
             <Right>

@@ -48,7 +48,7 @@ const Desc = styled.p`
 export const ConnectNUS = () => {
   return (
     <Section>
-        <Img src='../resources/ConnectNUS.png'/>
+        <Img src='/ConnectNUS.png'/>
         <Subtitle>A desktop application for Module Planning</Subtitle>
         <Desc>
             A brownfield project engineered to tackle the lack of collaborative platforms during the Module Bidding exercise in NUS, in a team of 5 as part of a software engineering module. 
