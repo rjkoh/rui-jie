@@ -90,7 +90,7 @@ const ListItem = styled.li`
   }
 
   @media screen and (max-width: 768px){
-    font-size: 18px;
+    font-size: 24px;
     text-align: center;
   }
 `
@@ -120,7 +120,10 @@ const Button = styled.button`
   padding-inline: 10px;
   padding-block: 5px;
   border-radius: 5px;
+  border: none;
   font-size: 20px;
+  background-color: #00d0f4;
+  font-family: 'Open Sans', sans-serif;
 `
 
 export const Works = () => {

@@ -13,6 +13,7 @@ const Section = styled.div`
   align-items: center;
   justify-content: space-between;
   padding-top: 10vh;
+  
 
   @media screen and (max-width: 768px){
     height: 200vh;
@@ -48,24 +49,28 @@ const Left = styled.div`
 `
 
 const Title = styled.h1`
-  font-size: 56px;
+  font-size: 50px;
+  color: #00d0f4;
+  font-family: 'Roboto Mono', monospace;
 
   @media screen and (max-width: 768px){
-    font-size: 30px;
+    font-size: 36px;
     text-align: center;
   }
 `
 
 const Subtitle = styled.h2`
-  color: blue;
+  color: #da4ea2;
+  font-family: 'Open Sans', sans-serif;
 
   @media screen and (max-width: 768px){
-    font-size: 26px;
+    font-size: 22px;
     text-align: center;
   }
 `
 
 const Desc = styled.p`
+  font-family: 'Open Sans', sans-serif;
   @media screen and (max-width: 768px){
     font-size: 14px;
   }
@@ -106,9 +111,9 @@ export const Hero = () => {
           <Title>Hello, I am Rui Jie</Title>
           <Subtitle>Aspiring Full-Stack Software Engineer</Subtitle>
           <Desc>
-            I am a Singaporean Computer Science student skilled in Java, JavaScript and Python.<br/>
-            Adept at working in teams and both frontend and backend programming, and pursuing a career in Software Engineering.<br/>
-            My life motto is to be the best you can be, and I always strive for excellence in my work.<br/>
+            I am a Singaporean Computer Science student skilled in Java, JavaScript and Python.<br/><br/>
+            Adept at working in teams and both frontend and backend programming, and pursuing a career in Software Engineering.<br/><br/>
+            My life motto is to be the best you can be, and I always strive for excellence in my work.<br/><br/>
             Other languages/frameworks include React, React Native, GoLang, Node.js, Three.js, SQL, HTML and TailwindCSS.
           </Desc>
           <Links>

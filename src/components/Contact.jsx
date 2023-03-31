@@ -40,7 +40,8 @@ const Left = styled.div`
 `
 
 const Title = styled.h1`
-    font-weight: 200;
+    font-family: 'Roboto Mono', monospace;
+    color: #00d0f4;
 `
 
 const Form = styled.form`
@@ -73,6 +74,7 @@ const Button = styled.button`
     color: white;
     border: none;
     border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
     cursor: pointer;
 `
 

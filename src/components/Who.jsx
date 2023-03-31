@@ -44,19 +44,25 @@ const Right = styled.div`
 
 const Title = styled.h1`
   font-size: 64px;
+  color: #00d0f4;
+  font-family: 'Roboto Mono', monospace;
+
   @media screen and (max-width: 768px){
     text-align: center;
+    font-size: 56px;
   }
 `
 
 const Subtitle = styled.h2`
-  color: blue;
+  color: #da4ea2;
+  font-family: 'Open Sans', sans-serif;
   @media screen and (max-width: 768px){
     text-align: center;
   }
 `
 
 const Desc = styled.p`
+font-family: 'Open Sans', sans-serif;
   @media screen and (max-width: 768px){
     font-size: 14px;
   }
@@ -110,10 +116,10 @@ export const Who = () => {
                 <Title>About me</Title>
                 <Subtitle>Hello!</Subtitle>
                 <Desc>
-                I am Rui Jie, a current Year 2 Student at National University of Singapore, majoring in Computer Science and Business Adminstration Double Degree Program.<br/>
+                I am Rui Jie, a current Year 2 Student at National University of Singapore, majoring in Computer Science and Business Adminstration Double Degree Program.<br/><br/>
                 My interest started out from curiosity through learning how to build my own telegram bot, which blossomed into a passion for software engineering. 
                 I am a driven individual with a knack for leadership, teamwork, and problem-solving. 
-                Through my various modules and my own project, I have learnt numerous frontend and backend softwares, which you may find out more about here on this website.<br/>
+                Through my various modules and my own project, I have learnt numerous frontend and backend softwares, which you may find out more about here on this website.<br/><br/>
                 In my free time, I enjoy running, gaming, and watching sports (Football, Basketball, and Formula 1).
                 </Desc>
             </Right>

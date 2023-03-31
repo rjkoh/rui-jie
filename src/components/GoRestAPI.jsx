@@ -27,7 +27,8 @@ const Img = styled.img`
 `;
 
 const Subtitle = styled.h2`
-  color: blue;
+  color: #da4ea2;
+  font-family: 'Open Sans', sans-serif;
 
   @media screen and (max-width: 768px) {
     font-size: 18px;
@@ -37,6 +38,7 @@ const Subtitle = styled.h2`
 
 const Desc = styled.p`
     text-align: justify;
+  font-family: 'Open Sans', sans-serif;
 
     @media screen and (max-width: 768px) {
     font-size: 12px;
