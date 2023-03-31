@@ -42,14 +42,14 @@ const Desc = styled.p`
 
 export const HallInOne = () => {
     var index = 1;
-    const [image, setImage] = useState('/hallinone/1.png')
+    const [image, setImage] = useState('./hallinone/1.png')
     useEffect(() => {
         setInterval(() => {
             index++;
             if (index > 9) {
                 index = 1;
             }
-            setImage(`/hallinone/${index}.png`)
+            setImage(`./hallinone/${index}.png`)
         }, 5000)
     }, [])
   return (

@@ -47,14 +47,14 @@ const Desc = styled.p`
 
 export const GoRestAPI = () => {
     var index = 1;
-    const [image, setImage] = useState('/gorestapi/1.png')
+    const [image, setImage] = useState('./gorestapi/1.png')
     useEffect(() => {
         setInterval(() => {
             index++;
             if (index > 4) {
                 index = 1;
             }
-            setImage(`/gorestapi/${index}.png`)
+            setImage(`./gorestapi/${index}.png`)
         }, 5000)
     }, [])
   return (
