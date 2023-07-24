@@ -137,7 +137,7 @@ export const Hero = () => {
               <Mac/>
             </Stage>
             
-            <OrbitControls enableZoom={false} autoRotate/>
+            <OrbitControls autoRotate/>
           </Canvas>
         </Right>
       </Container>
