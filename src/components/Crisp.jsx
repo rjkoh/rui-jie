@@ -52,7 +52,9 @@ export const Crisp = () => {
         <Subtitle>A web-based dashboard for management and evaluation of multi-git classrooms</Subtitle>
         <Desc>
             A brownfield project as part of B.Comp Dissertation to streamline the management and evaluation of large-scale software engineering modules involving multiple teams working across multiple GitHub repositories.
+            <br></br>
             Collaborated with a team using the MERN stack (MongoDB, Express.js, React, Node.js), supported by Docker and Jenkins.
+            <br></br>
             Pioneered cutting-edge feature of Static Code Quality Analysis, to provide various metrics for grading code quality and explored usage of advanced tools such as SonarQube on an organisational basis, as well as Code AI Language Models
         </Desc>
     </Section>
