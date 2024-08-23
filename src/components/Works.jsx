@@ -142,9 +142,9 @@ export const Works = () => {
                 ) : curr == 'RCYCL' ? (
                     <Rcycl/>
                 ) : curr == 'ScamQuest' ? (
-                    <HallInOne/>
+                    <ScamQuest/>
                 ) : curr == 'CRISP' ? (
-                  <HallInOne/>
+                  <Crisp/>
                 ) : (
                   <MoreContainer>
                     <ModelContainer>
